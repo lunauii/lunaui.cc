@@ -3,7 +3,7 @@ navbar_entries:
     url: about
 
   - title: blog
-    url: false
+    #url: 404
 
   - title: contact me
     url: contactme
