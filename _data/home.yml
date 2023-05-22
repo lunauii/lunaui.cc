@@ -6,7 +6,7 @@ navbar_entries:
     url: false
 
   - title: contact me
-  - url: contactme
+    url: contactme
 
 project_entries:
   - title: Witchtrail
