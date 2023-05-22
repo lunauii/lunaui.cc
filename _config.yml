@@ -4,7 +4,7 @@ url: https://lunauii.github.io # root address of the site
 description: # description of the site (multiple lines allowed)
     pillows are sfot and i lvoe them
 
-    Website is currently a WIP, so you might see artifacts from the base Moonwalk template
+    Website is currently a WIP, so expect unrelated pages
 permalink: /:slug
 
 favicon: "./logo.png" # relative path to site's favicon
