@@ -6,4 +6,6 @@ title: Contact Me
 wip
 
 Discord: Lunaui#4877
-[Email][mailto:angelo.rws@gmail.com]
+[Email][mail-link]
+
+[mail-link] = mailto:angelo.rws@gmail.com
