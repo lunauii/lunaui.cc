@@ -3,68 +3,31 @@ navbar_entries:
     url: about
 
   - title: blog
-    url: blog
+    url: 
 
-  - title: website
-    url: https://www.abhinav.co
+  - title: contact me
+  - url: 
 
 project_entries:
-  - title: Project 1
-    url: overview-post
-    desc: This is an example project, configured in _data/home.yml
-
-  - title: Project 2
-    url: overview-post
-    desc: Projects are shown in card layout
-
-  - title: Project 3
-    url: overview-post
-    desc: You can control visibility from _config.yml file
-
-  - title: Project 4
-    url: overview-post
-    desc: This project uses highlight markup, configured in _data/home.yml
+  - title: Witchtrail
+    url: https://lunaui.itch.io/witchtrail
+    desc: Upcoming game of unknown genre. Comes with catgirls.
     highlight: WIP
 
-  - title: Project 5
-    url: overview-post
-    desc: Moonwalk also has horizontal list (used in header and footer)
+  - title: Yet Another Interactive Terraria Guide (YAITG)
+    #url: 
+    desc: Interactive Guide for Terraria; original by Jasonthe4th#3941 on Discord
     highlight: WIP
-
-  - title: Project 6
-    url: overview-post
-    desc: It also has a scalable vertical list (in case you need it)
-
-old_project_entries:
-  - title: Soopr
-    url: https://www.soopr.co
-    desc: Delight your readers - add beautiful share and like buttons easily to your websites 
-    highlight: NEW
-
-  - title: Cookie
-    url: https://github.com/abhinavs/cookie
-    desc: An open source landing website with supporting pages and integrated blog
-
-  - title: Moonwalk
-    url: https://github.com/abhinavs/moonwalk
-    desc: A fast and minimalist Jekyll blog theme with clean dark mode
-
-  - title: Humangous
-    url: https://www.humangous.co
-    desc: The better people know you, the better they collaborate
 
 footer_entries:
-  - title: abhinav's homepage
-    url: https://www.abhinav.co
+  - title: youtube
+    url: https://www.youtube.com/channel/UCXztO-oXsoP9ms5KmVboDKA
 
-  - title: twitter
-    url: https://twitter.com/abhinav
+  - title: itch.io
+    url: https://lunaui.itch.io
 
   - title: github
-    url: https://github.com/abhinavs
-
-  - title: feed
-    url: feed.xml
+    url: https://github.com/lunauii
 
 misc_entries:
   - title: this is an example vertical list
