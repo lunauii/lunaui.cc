@@ -19,7 +19,7 @@ project_entries:
     desc: Story of a noble's daughter and swordsmithy's son. What could go wrong?
     highlight: WIP
 
-concept_entries:
+old_project_entries:
   - title: Terraseum
     #url
     desc: TCG game which revolves around a frontline and a backline.
