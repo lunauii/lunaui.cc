@@ -15,9 +15,9 @@ project_entries:
     highlight: WIP
 
   - title: Yet Another Interactive Terraria Guide (YAITG)
-    #url: 
-    desc: Interactive Guide for Terraria; original by Jasonthe4th#3941 on Discord
-    highlight: WIP
+    url: yaitg
+    desc: Interactive Class Guide for Terraria. *NOTE* Does NOT work for iOS devices.
+    highlight: PROTOTYPE
 
 footer_entries:
   - title: youtube
