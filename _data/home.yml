@@ -9,15 +9,33 @@ navbar_entries:
     url: contactme
 
 project_entries:
-  - title: Witchtrail
-    url: https://lunaui.itch.io/witchtrail
-    desc: Upcoming game of unknown genre. Comes with catgirls.
-    highlight: WIP
-
   - title: Yet Another Interactive Terraria Guide (YAITG)
     url: yaitg
     desc: Interactive Class Guide for Terraria. *NOTE* Does NOT work for iOS devices.
-    highlight: PROTOTYPE
+    highlight: NEW
+
+  - title: Strawberry Vanilla
+    #url:
+    desc: Story of a noble's daughter and swordsmithy's son. What could go wrong?
+    highlight: WIP
+
+concept_entries:
+  - title: Terraseum
+    #url
+    desc: TCG game which revolves around a frontline and a backline.
+  
+  - title: Witchtrail
+    url: https://lunaui.itch.io/witchtrail
+    desc: Upcoming game of unknown genre. Comes with catgirls.
+
+  - title: I am still me.
+    #url
+    desc: Cute story about 2 guys(?) trying to find their meaning in life.
+
+
+  - title: Soulstacked
+    #url
+    desc: 1v1 or 3v3 fighting game where every game is different from the last.
 
 footer_entries:
   - title: youtube
