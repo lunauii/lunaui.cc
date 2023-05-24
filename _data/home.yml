@@ -9,10 +9,9 @@ navbar_entries:
     url: contactme
 
 project_entries:
-  - title: Yet Another Interactive Terraria Guide (YAITG)
+  - title: Terragear (YAITG)
     url: yaitg
-    desc: Interactive Class Guide for Terraria. *NOTE* Does NOT work for iOS devices.
-    highlight: NEW
+    desc: Interactive Class Guide for Terraria. *NOTE* Does NOT work for Apple devices.
 
   - title: Strawberry Vanilla
     #url:
