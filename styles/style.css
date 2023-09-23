@@ -19,6 +19,7 @@ section {
     min-height: 100vh;
 }
 
+
 header {
     padding: 15% 10%;
     padding-bottom: 5%;
@@ -26,7 +27,7 @@ header {
 
 h1 {
     position: relative;
-    font-size: 6.5vmin;
+    font-size: 3.5vmax;
     white-space: nowrap ;
 }
 
@@ -41,6 +42,29 @@ main {
 footer {
     padding: 5% 5%;
     font-size: 1.75vmin;
+}
+
+.arrow {
+     text-align: right;
+     margin: 15% 5%;
+  }
+
+.bounce {
+     -moz-animation: bounce 2s infinite;
+     -webkit-animation: bounce 2s infinite;
+     animation: bounce 2s infinite;
+}
+  
+@keyframes bounce {
+     0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+     }
+     40% {
+      transform: translateY(-16px);
+     }
+     60% {
+      transform: translateY(-8px);
+     }
 }
 
 a:link, a:visited {
@@ -165,6 +189,19 @@ section.show-animate .animate {
     opacity: 1;
 }
 
+.sec-4 .animate {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.sec-4.show-animate .animate {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* 
+Commented out until i figure out whats wrong on safari
+
 .sec-4 .showRight-animate {
     position: absolute;
     top: 0;
@@ -178,7 +215,9 @@ section.show-animate .animate {
 
 .sec-4.show-animate .showRight-animate {
     width: 0;
-}
+} 
+
+*/
 
 .sec-5 .animate {
     opacity: 0;
