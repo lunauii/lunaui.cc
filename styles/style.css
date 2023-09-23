@@ -11,19 +11,31 @@
 }
 
 
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 header {
     padding: 15% 10%;
     padding-bottom: 5%;
 }
 
 h1 {
+    position: relative;
     font-size: 6.5vmin;
     white-space: nowrap ;
 }
 
+p {
+    position: relative
+}
+
 main {
-    text-align: center;
-    padding: 5% 20%
+    padding: 0 15%
 }
 
 footer {
@@ -33,13 +45,16 @@ footer {
 
 a:link, a:visited {
     color: #ffcf88;
-    text-decoration: none;
 }
 
 a:hover {
     color: #ffcf88;
+    text-decoration: none;
 }
 
+.error {
+    font-size: 12vmin;
+}
 
 .footer {
     
@@ -51,6 +66,16 @@ a:hover {
     font-weight: 100;
     font-style: italic;
     font-size: 2.5vmin
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.lunauiBold {
+    font-weight: bold;
+    color: #ffcf88
 }
 
 .blinking {
