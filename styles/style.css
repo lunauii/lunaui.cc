@@ -27,7 +27,7 @@ header {
 
 h1 {
     position: relative;
-    font-size: 3.5vmax;
+    font-size: 5vmax;
     white-space: nowrap ;
 }
 
@@ -36,35 +36,12 @@ p {
 }
 
 main {
-    padding: 0 15%
+    margin: 10% 0;
 }
 
 footer {
-    padding: 5% 5%;
+    padding: 0 5%;
     font-size: 1.75vmin;
-}
-
-.arrow {
-     text-align: right;
-     margin: 15% 5%;
-  }
-
-.bounce {
-     -moz-animation: bounce 2s infinite;
-     -webkit-animation: bounce 2s infinite;
-     animation: bounce 2s infinite;
-}
-  
-@keyframes bounce {
-     0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
-     }
-     40% {
-      transform: translateY(-16px);
-     }
-     60% {
-      transform: translateY(-8px);
-     }
 }
 
 a:link, a:visited {
@@ -86,11 +63,17 @@ a:hover {
     line-height: 2.5em;
 }
 
-.subheader {
+p .subheader {
+    color: #887f8a;
     font-weight: 100;
     font-style: italic;
     font-size: 2.5vmin
 }
+
+.accent {
+    color: #887f8a;
+}
+
 
 .images {
     display: grid;
