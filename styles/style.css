@@ -48,7 +48,7 @@ a:hover {
     background-color: #211a20;
     display: grid;
     height: 100vh;
-    grid-template-columns: 0.2fr 1fr 0.2fr;
+    grid-template-columns: 0.4fr 1fr 0.4fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
         "nav main blank"
@@ -56,19 +56,50 @@ a:hover {
 
 }
 
-nav *{
+header > nav {
     grid-area: nav;
+    background-color: #211a20;
     display: flex;
     flex-direction: column;
+    justify-content: left;
     align-items: start;
-    padding: 0 5%;
+    text-align: left;
+    position: relative; 
+    font-size: 20pt;
+    padding-left: 10%;
 }
 
-nav > a, nav > div {
-    font-weight: bold;
-    font-size: 3vmin;
-    padding: 0.4rem 2rem;
-    margin: 0;
+header a {
+    padding: 0.2rem 1rem;
+    margin: 5% 0;
+    text-align: left;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.sidedrop a {
+    background-color: #ffffff00;
+}
+
+.navbar div > .sidedrop {
+    padding: 0.2rem 1rem;
+    background: #4c3a48;
+    border-radius: 15px;
+    text-decoration: none;
+    height: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .5s ease;
+    top: 35px;
+    width: 100%;
+    margin-top: 5%;
+    padding: 10% 10%;
+}
+
+.navbar div:hover .sidedrop {
+    height: auto;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .logo-div {
@@ -188,5 +219,53 @@ p .subheader {
 
     100% {
         opacity: 1.0;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        background-color: #211a20;
+        display: block;
+        height: 85vh;
+    }
+
+    header {
+        display: none;
+    }
+
+    .blank {
+        display: none;
+    }
+
+    .logo {
+        max-width: 60%;
+    }
+
+    #logo-footer {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        background-color: #211a20;
+        display: block;
+        height: 90vh;
+    }
+
+    header {
+        display: none;
+    }
+
+    .blank {
+        display: none;
+    }
+
+    .logo {
+        max-width: 80%;
+    }
+
+    #logo-footer {
+        display: block;
     }
 }
