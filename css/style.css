@@ -32,6 +32,10 @@ footer {
     font-size: 1.75vmin;
 }
 
+a {
+    position: relative;
+}
+
 a:link, a:visited {
     color: #ffcf88;
 }
@@ -40,14 +44,25 @@ a:hover {
     color: #ffcf88;
     text-decoration: none;
 }
+.sidedrop p {
+    margin: 5% 0;
+}
+
+a.sidedrop-link {
+    background-color: #ffffff00;
+}
+
 
 a.sidedrop-link:link, a.sidedrop-link:visited {
     color: #887e6f;
+    transition: all .5s ease;
+    background-color: #72576c00;
 }
 
-a:hover {
+a.sidedrop-link:hover {
     color: #ffcf88;
-    text-decoration: none;
+    border-radius: 15px;
+    background-color: #72576cff;
 }
 
 .container {
@@ -76,19 +91,14 @@ header > nav {
 }
 
 header a {
-    padding: 0.2rem 1rem;
+    padding: 0.1rem 1rem;
     margin: 5% 0;
     text-align: left;
     border-radius: 15px;
     text-decoration: none;
 }
 
-.sidedrop a {
-    background-color: #ffffff00;
-}
-
 .navbar div > .sidedrop {
-    padding: 0.2rem 1rem;
     background: #4c3a48;
     border-radius: 15px;
     text-decoration: none;
