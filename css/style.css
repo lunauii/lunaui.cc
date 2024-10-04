@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
 
 body, html {
-    background-color: #2f2731   ;
+    background-color: #2f2731;
     color: #FFFFFF;
     text-align: center;
     align-content: center;
@@ -9,6 +9,12 @@ body, html {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 h1 {
