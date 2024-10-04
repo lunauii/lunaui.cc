@@ -69,7 +69,7 @@ a.sidedrop-link:hover {
     background-color: #211a20;
     display: grid;
     height: 100vh;
-    grid-template-columns: 0.4fr 1fr 0.4fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
         "nav main blank"
@@ -102,10 +102,10 @@ header a {
     background: #4c3a48;
     border-radius: 15px;
     text-decoration: none;
-    height: 0;
+    max-height: 0;
     left: 0;
     opacity: 0;
-    transition: all .5s ease;
+    transition: all 0.5s ease-out;
     top: 35px;
     width: 100%;
     margin-top: 5%;
@@ -113,9 +113,28 @@ header a {
 }
 
 .navbar div:hover .sidedrop {
-    height: auto;
+    max-height: 25vh;
     opacity: 1;
     transform: translateY(0);
+}
+
+.navbar .arrow, .navbar div > a {
+    transform: rotate(0deg);
+    transition: all ease-in-out 0.1s;
+}
+
+.navbar div:hover .arrow, .navbar div:hover > a {
+    color: #fff;
+    transform: rotate(180deg);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .logo-div {
@@ -128,7 +147,7 @@ header a {
 
 .logo {
     grid-area: logo;
-    max-width: 50%;
+    max-width: 60%;
     text-align: center;
 }
 
