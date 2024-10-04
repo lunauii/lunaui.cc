@@ -68,7 +68,7 @@ a.sidedrop-link:hover {
 .container {
     background-color: #211a20;
     display: grid;
-    height: 100vh;
+    height: 87.5vh;
     grid-template-columns: 0.5fr 1fr 0.5fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
@@ -170,6 +170,7 @@ main {
 
 footer {
     padding: 1rem 0;
+    height: 10vh;
 }
 
 .footer {
@@ -273,7 +274,7 @@ p .subheader {
     }
 
     .logo {
-        max-width: 60%;
+        max-width: 45%;
     }
 
     #logo-footer {
