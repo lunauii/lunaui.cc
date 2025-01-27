@@ -157,8 +157,23 @@ header a {
 
 .logo {
     grid-area: logo;
-    max-width: 60%;
+    max-width: 80%;
     text-align: center;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 #logo-footer {
