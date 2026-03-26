@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <input type="text" id="username" placeholder="Username"><br>
+    <input type="password" id="password" placeholder="Password"><br>
+    <button id="loginBtn">Login</button>
+    <button id="logoutBtn" style="display:none;">Logout</button>
+    <button id="getBtn" style="display:none;">Get Something</button>
+    <script>
+        const loginBtn = document.getElementById('loginBtn');
+        const logoutBtn = document.getElementById('logoutBtn');
+        const getBtn = document.getElementById('getBtn');
+
+        function checkStatus() {
+            const xhr = new XMLHttpRequest();
+            xhr.withCredentials = true;
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                        loginBtn.style.display = 'none';
+                        logoutBtn.style.display = 'inline';
+                        getBtn.style.display = 'inline';
+                    } else {
+                        loginBtn.style.display = 'inline';
+                        logoutBtn.style.display = 'none';
+                        getBtn.style.display = 'none';
+                    }
+                }
+            };
+            xhr.open('GET', 'https://temp.lunaui.cc/httponly-cookie/check');
+            xhr.send();
+        }
+
+        loginBtn.onclick = function() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            
+            const xhr = new XMLHttpRequest();
+            xhr.withCredentials = true;
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                        checkStatus();
+                        document.getElementById('username').value = '';
+                        document.getElementById('password').value = '';
+                    } else {
+                        alert('Login failed');
+                    }
+                }
+            };
+            xhr.open('POST', 'https://temp.lunaui.cc/httponly-cookie/login');
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.send(JSON.stringify({ username, password }));
+        };
+
+        logoutBtn.onclick = function() {
+            const xhr = new XMLHttpRequest();
+            xhr.withCredentials = true;
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4) {
+                    checkStatus();
+                }
+            };
+            xhr.open('POST', 'https://temp.lunaui.cc/httponly-cookie/logout');
+            xhr.send();
+        };
+
+        getBtn.onclick = function() {
+            const xhr = new XMLHttpRequest();
+            xhr.withCredentials = true;
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                        const response = JSON.parse(xhr.responseText);
+                        alert(response.message);
+                    } else {
+                        alert('Not logged in');
+                        checkStatus();
+                    }
+                }
+            };
+            xhr.open('GET', 'https://temp.lunaui.cc/httponly-cookie/something');
+            xhr.send();
+        };
+
+        checkStatus();
+        //DeepSeek Was used for this 
+    </script>
+</body>
+</html>
